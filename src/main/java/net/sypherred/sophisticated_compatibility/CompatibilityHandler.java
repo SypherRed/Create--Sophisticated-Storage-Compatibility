@@ -9,14 +9,9 @@ public class CompatibilityHandler {
 
     public static void init() {
         LOGGER.info("Registering compatibility handlers for crash prevention.");
-        LOGGER.info("Applying Mixin to prevent ClassCastException when Sophisticated Storage tries to mark dirty in Create Virtual Chunks.");
 
-        // Register event handlers to prevent crashes with Create Contraptions
         ServerLifecycleEvents.SERVER_STARTED.register(server -> {
             LOGGER.info("Server started, compatibility active. Sophisticated Storage chests are now compatible with Create Contraptions.");
         });
-
-        // The main fix is applied via Mixin (BlockEntityMixin) which prevents
-        // Sophisticated Storage from calling markDirty() in Virtual Chunks
     }
 }

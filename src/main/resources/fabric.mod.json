@@ -5,13 +5,13 @@
 	"name": "Create: Sophisticated Storage Compatibility",
 	"description": "A compatibility mod that enables interaction between Create's mechanical systems and Sophisticated Storage's advanced chests for automatic item transfers.",
 	"authors": [
-		"Me!"
+		"SypherRed"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/SypherRed/Create_Sophisticated-Storage_Compatibility",
+		"issues": "https://github.com/SypherRed/Create_Sophisticated-Storage_Compatibility/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0-only",
 	"icon": "logo.png",
 	"environment": "*",
 	"entrypoints": {
