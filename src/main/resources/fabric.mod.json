@@ -3,7 +3,7 @@
 	"id": "create-sophisticated-storage-compatibility",
 	"version": "${version}",
 	"name": "Create: Sophisticated Storage Compatibility",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A compatibility mod that enables interaction between Create's mechanical systems and Sophisticated Storage's advanced chests for automatic item transfers.",
 	"authors": [
 		"Me!"
 	],
@@ -29,6 +29,8 @@
 		"fabricloader": ">=0.19.2",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"create": "*",
+		"sophisticatedstorage": "*"
 	}
 }
