@@ -18,7 +18,7 @@ public abstract class BlockEntityMixin {
      * Intercepts BlockEntity.markDirty() calls and cancels them if in a Virtual Chunk.
      * This prevents: ClassCastException: VirtualChunk cannot be cast to WorldChunk
      */
-    @Inject(method = "markDirty", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "setChanged", at = @At("HEAD"), cancellable = true)
     private void onMarkDirty(CallbackInfo ci) {
         try {
             BlockEntity blockEntity = (BlockEntity) (Object) this;
